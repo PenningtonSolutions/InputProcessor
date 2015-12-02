@@ -3,6 +3,14 @@ using System;
 
 namespace vAuto
 {
+    /// <summary>
+    /// PP 1.5: 
+    //  In the programming language of your choice, write a program that modifies a string using the following rules:
+    //  1.  Each word in the input string is replaced with the following:  the first letter of the word, the count of distinct letters between 
+    //      the first and last letter, and the last letter of the word. For example, "Automotive" would be replaced by "A6e".
+    //  2.  A "word" is defined as a sequence of alphabetic characters, delimited by any non-alphabetic characters.
+    //  3.  Any non-alphabetic character in the input string should appear in the output string in its original relative location.
+    /// </summary>
     class Program
     {
         static void Main (string[] args)
@@ -24,7 +32,7 @@ namespace vAuto
             //}
 
             // Use if you would like to manually enter in your input/delimiter string
-            input = "@=Auto;wow6car.4john$";
+            input = "@=Auto;wow6car.4john$Automotive";
             delimiter = @"[^a-zA-Z]";
 
             UniqueCharacterStringProcessor processor = new UniqueCharacterStringProcessor(new RegularExpressionParser());

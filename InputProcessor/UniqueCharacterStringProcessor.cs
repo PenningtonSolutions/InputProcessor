@@ -17,7 +17,8 @@ namespace InputProcessor
 
         /// <summary>
         /// Takes input string and delimiter and after parsing string based upon passed in delimiter, it returns the first character or the parsed substring
-        /// the number of unique characters, the last character of the parsed subtring, and the delimiter found to split this substring
+        /// the number of unique characters between the first and last character, the last character of the parsed subtring, 
+        /// and the delimiter found to split this substring
         /// 
         /// Returns "0" if the input string is null or empty
         /// 
@@ -33,12 +34,11 @@ namespace InputProcessor
             {
                 yield return "0";
             }
-            // If delimiter string is null or empty then simply count the unique characters within input string and return normal first character of input string
-            // number of unique characters, and last character of input string since we have nothing to parse the input string with
+            // If delimiter string is null or empty then simply compute unique characters and build output string with first char of input, number of unique characters,
+            // and last character of input string since we have nothing to parse the input string with
             else if (String.IsNullOrEmpty(delimiter))
             {
-                int uniqueCharacters = input.Distinct().Count();
-                yield return input.First() + uniqueCharacters.ToString() + input.Last();
+                yield return input.First() + CountUniqueChars(input).ToString() + input.Last();
             }
             // Parse string and comput results as detailed above
             else
@@ -54,10 +54,26 @@ namespace InputProcessor
                     // Compute the resulting oupt based upon details given above
                     else
                     {
-                        int uniqueCharacters = word.word.Distinct().Count();
-                        yield return word.word.First() + uniqueCharacters.ToString() + word.word.Last() + word.delimiter;
+                        yield return word.word.First() + CountUniqueChars(word.word).ToString() + word.word.Last() + word.delimiter;
                     }
                 }
+            }
+        }
+
+        /// <summary>
+        /// strips the first and last character from the word and returns the count of unique characters from the string
+        /// </summary>
+        /// <param name="word"></param> String to compute
+        /// <returns></returns>
+        private int CountUniqueChars(string word)
+        {
+            if (word.Length <= 2)
+            {
+                return 0;
+            }
+            else
+            {
+                return word.Skip(1).Take(word.Length - 2).Distinct().Count();
             }
         }
     }

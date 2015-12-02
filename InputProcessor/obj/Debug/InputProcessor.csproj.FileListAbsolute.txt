@@ -3,3 +3,8 @@ C:\Scratch\vAuto\InputProcessor\bin\Debug\InputProcessor.pdb
 C:\Scratch\vAuto\InputProcessor\obj\Debug\InputProcessor.csprojResolveAssemblyReference.cache
 C:\Scratch\vAuto\InputProcessor\obj\Debug\InputProcessor.dll
 C:\Scratch\vAuto\InputProcessor\obj\Debug\InputProcessor.pdb
+C:\GitHub\InputProcessor\InputProcessor\bin\Debug\InputProcessor.dll
+C:\GitHub\InputProcessor\InputProcessor\bin\Debug\InputProcessor.pdb
+C:\GitHub\InputProcessor\InputProcessor\obj\Debug\InputProcessor.csprojResolveAssemblyReference.cache
+C:\GitHub\InputProcessor\InputProcessor\obj\Debug\InputProcessor.dll
+C:\GitHub\InputProcessor\InputProcessor\obj\Debug\InputProcessor.pdb

@@ -51,7 +51,7 @@ namespace InputProcessor.Tests
             }
 
             Assert.AreEqual(1, words.Count);
-            Assert.AreEqual("r3r", words[0]);
+            Assert.AreEqual("r2r", words[0]);
 
             words.Clear();
 
@@ -61,7 +61,7 @@ namespace InputProcessor.Tests
             }
 
             Assert.AreEqual(1, words.Count);
-            Assert.AreEqual("r3r", words[0]);
+            Assert.AreEqual("r2r", words[0]);
         }
 
         // Could stub the call to Parse the string since it is tested elsewhere but sadly fakes are only included in Enterprise version of VS 2015
@@ -70,24 +70,27 @@ namespace InputProcessor.Tests
         {
             List<string> words = new List<string>();
 
-            foreach (string result in uniqueCharacterStringProcessor.ParseString("radar;wow6car'awesome", @"[^a-zA-Z]"))
+            foreach (string result in uniqueCharacterStringProcessor.ParseString("radar;wow6car'awesome!Automotive", @"[^a-zA-Z]"))
             {
                 words.Add(result);
             }
 
-            Assert.AreEqual(4, words.Count);
+            Assert.AreEqual(5, words.Count);
 
             // First result test
-            Assert.AreEqual("r3r;", words[0]);
+            Assert.AreEqual("r2r;", words[0]);
 
             // Second result test
-            Assert.AreEqual("w2w6", words[1]);
+            Assert.AreEqual("w1w6", words[1]);
 
             // Third result test
-            Assert.AreEqual("c3r'", words[2]);
+            Assert.AreEqual("c1r'", words[2]);
 
-            // Third result test
-            Assert.AreEqual("a6e", words[3]);
+            // Fourth result test
+            Assert.AreEqual("a5e!", words[3]);
+
+            // Fifth result test
+            Assert.AreEqual("A6e", words[4]);
         }
     }
 }
