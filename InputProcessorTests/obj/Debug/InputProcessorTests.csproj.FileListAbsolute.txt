@@ -1,0 +1,8 @@
+C:\Scratch\vAuto\InputProcessorTests\bin\Debug\InputProcessorTests.dll
+C:\Scratch\vAuto\InputProcessorTests\bin\Debug\InputProcessorTests.pdb
+C:\Scratch\vAuto\InputProcessorTests\bin\Debug\InputProcessor.dll
+C:\Scratch\vAuto\InputProcessorTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Scratch\vAuto\InputProcessorTests\bin\Debug\InputProcessor.pdb
+C:\Scratch\vAuto\InputProcessorTests\obj\Debug\InputProcessorTests.csprojResolveAssemblyReference.cache
+C:\Scratch\vAuto\InputProcessorTests\obj\Debug\InputProcessorTests.dll
+C:\Scratch\vAuto\InputProcessorTests\obj\Debug\InputProcessorTests.pdb

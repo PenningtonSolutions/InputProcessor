@@ -1,0 +1,8 @@
+C:\Scratch\vAuto\vAuto\bin\Debug\vAuto.exe.config
+C:\Scratch\vAuto\vAuto\bin\Debug\vAuto.exe
+C:\Scratch\vAuto\vAuto\bin\Debug\vAuto.pdb
+C:\Scratch\vAuto\vAuto\bin\Debug\InputProcessor.dll
+C:\Scratch\vAuto\vAuto\bin\Debug\InputProcessor.pdb
+C:\Scratch\vAuto\vAuto\obj\Debug\vAuto.csprojResolveAssemblyReference.cache
+C:\Scratch\vAuto\vAuto\obj\Debug\vAuto.exe
+C:\Scratch\vAuto\vAuto\obj\Debug\vAuto.pdb
